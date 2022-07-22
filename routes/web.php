@@ -7,9 +7,11 @@ use App\Http\Controllers\Auth\LoginController;
 
 //Namespace Admin
 use App\Http\Controllers\Admin\AdminController;
-
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\CompanyController;
 //Namespace User
 use App\Http\Controllers\User\UserController;
+
 use App\Http\Controllers\User\ProfileController;
 
 use App\Http\Controllers\Controller;
@@ -30,7 +32,10 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/',[Controller::class,'index']);
+Route::get('/', function(){
+	return view('home', [
+	]);
+});
 
 Route::get('/jobfair',[JobfairController::class,'index']);
 Route::get('/about',[AboutController::class,'index']);
@@ -42,10 +47,12 @@ Route::get('/register',[RegisterController::class,'index']);
 Route::group(['namespace' => 'Admin','middleware' => 'auth','prefix' => 'admin'],function(){
 	
 	Route::get('/',[AdminController::class,'index'])->name('admin')->middleware(['can:admin']);
-
+	
 	//Route Rescource
 	Route::resource('/user','UserController')->middleware(['can:admin']);
-
+	Route::get('/category',[CategoryController::class,'edit']);
+	Route::resource('/category','CategoryController')->middleware(['can:admin']);
+	Route::resource('/company','CompanyController')->middleware(['can:admin']);
 	//Route View
 	
 	Route::view('/404-page','admin.404-page')->name('404-page');

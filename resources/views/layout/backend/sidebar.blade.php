@@ -27,11 +27,11 @@
             <span>Dashboard</span></a>
     </li>  
     @elseCan('admin')
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="{{ route('user') }}">
             <i class="fas fa-fw fa-user"></i>
             <span>User Dashboard</span></a>
-    </li>
+    </li> --}}
     @endCan
 
     <!-- Divider -->
@@ -54,11 +54,16 @@
                 <a class="collapse-item" href="{{ route('user.index') }}">User</a>
             </div>
         </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{ route('category.index') }}">Category</a>
+            </div>
+        </div>
     </li>
     @endcan
 
     <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-cog"></i>
@@ -71,10 +76,10 @@
                 <a class="collapse-item" href="{{ route('cards') }}">Cards</a>
             </div>
         </div>
-    </li>
+    </li> --}}
 
     <!-- Nav Item - Utilities Collapse Menu -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
             aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-fw fa-wrench"></i>
@@ -90,7 +95,7 @@
                 <a class="collapse-item" href="{{ route('utilities-other') }}">Other</a>
             </div>
         </div>
-    </li>
+    </li> --}}
 
     <!-- Divider -->
     <hr class="sidebar-divider">
@@ -101,7 +106,7 @@
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
             aria-expanded="true" aria-controls="collapsePages">
             <i class="fas fa-fw fa-folder"></i>
@@ -119,15 +124,19 @@
                 <a class="collapse-item" href="{{ route('blank-page') }}">Blank Page</a>
             </div>
         </div>
-    </li>
+    </li> --}}
 
     <!-- Nav Item - Charts -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="{{ route('chart') }}">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Charts</span></a>
+    </li> --}}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('company.index') }}">
+            <i class="fas fa-fw fa-house-user"></i>
+            <span>Company</span></a>
     </li>
-
     <!-- Nav Item - Tables -->
     <li class="nav-item">
         <a class="nav-link" href="{{ route('tables') }}">

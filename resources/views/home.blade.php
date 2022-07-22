@@ -8,26 +8,37 @@
                     <div style="position: absolute;left: 0;bottom: 0;width: 100%;">
                         <div class="row">
                             <div class="col btn-meja">
-                                <div class="d-flex justify-content-center align-items-end w-100 h-100">
-                                    <img src="{{ url('assets/img/tb1.png') }}" width="250">  
+                                {{-- <p style="background-color:white ;" width="100px" align="center">Hello</p> --}}
+                                <label style="position: absolute;margin:10%;margin-top:5%;width:70%;" class="text-white">PT. Zamasco Mitra Solusindo</label>
+                                <div class="d-flex justify-content-center align-items-end w-100 h-100" style="padding-bottom: 50px;">
+                                      <img src="{{ url('assets/img/tb1.png') }}" width="250">  
                                 </div>
+                           
                             </div>
                                 <div class="col btn-meja">
+                                    {{-- <p style="background-color:white ;" width="100px" align="center">Hello</p> --}}
+                                <label style="position: absolute;margin:10%;margin-top:-10%;width:70%;" class="text-white">PT. Zamasco Mitra Solusindo</label>
                                 <div class="d-flex justify-content-center align-items-end w-100 h-100" style="padding-bottom: 100px;">
                                     <img src="{{ url('assets/img/tb1.png') }}" width="250">  
                                 </div>
                             </div>
                             <div class="col btn-meja">
+                                {{-- <p style="background-color:white ;" width="100px" align="center">Hello</p> --}}
+                                <label style="position: absolute;margin:10%;margin-top:20%;width:70%;" class="text-white">PT. Zamasco Mitra Solusindo</label>
                                 <div class="d-flex justify-content-center align-items-end w-100 h-100">
                                     <img src="{{ url('assets/img/tb1.png') }}" width="250">  
                                 </div>
                             </div>
                                 <div class="col btn-meja">
+                                    {{-- <p style="background-color:white ;" width="100px" align="center">Hello</p> --}}
+                                <label style="position: absolute;margin:10%;margin-top:-10%;width:70%;" class="text-white">PT. Zamasco Mitra Solusindo</label>
                                 <div class="d-flex justify-content-center align-items-end w-100 h-100" style="padding-bottom: 100px;">
                                     <img src="{{ url('assets/img/tb1.png') }}" width="250">  
                                 </div>
                             </div>
                             <div class="col btn-meja">
+                                {{-- <p style="background-color:white ;" width="100px" align="center">Hello</p> --}}
+                                <label style="position: absolute;margin:10%;margin-top:20%;width:70%;" class="text-white">PT. Zamasco Mitra Solusindo</label>
                                 <div class="d-flex justify-content-center align-items-end w-100 h-100">
                                     <img src="{{ url('assets/img/tb1.png') }}" width="250">  
                                 </div>
